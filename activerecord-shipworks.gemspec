@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Shipworks::VERSION
   s.authors     = ["Dennis Wu"]
   s.email       = ["dennissfwu@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/dnswus/activerecord-shipworks"
   s.summary     = "ActiveRecord for Shipworks."
   s.description = "ActiveRecord for Shipworks."
   s.license     = "MIT"

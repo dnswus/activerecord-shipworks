@@ -1,5 +1,5 @@
 module Shipworks
-  class OrderCharge < Shipworks::ApplicationRecord
+  class OrderCharge < ShipworksRecord
     belongs_to :order, foreign_key: 'OrderID'
   end
 end

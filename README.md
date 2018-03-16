@@ -13,12 +13,7 @@ And then execute:
 $ bundle
 ```
 
-If you are connecting Shipworks as a second database, add Shipworks database configuration to a separate file, e.g. `config/shipworks_database.yml`, and add initializer `config/initializers/shipworks_db.rb` to set the `SHIPWORKS_DB` constant:
-
-```ruby
-# config/initializers/shipworks_db.rb
-SHIPWORKS_DB = YAML.load(ERB.new(IO.read(File.join(Rails.root, "config", "shipworks_database.yml"))).result)[Rails.env.to_s]
-```
+ActiveRecord Shipworks uses the main database connection by default. However, in most of the cases, you want to connect to Shipworks as a second database connection. You could do that by setting `ENV['SHIPWORKS_DATABASE_URL]` by using a configuration file called `config/shipworks_database.yml`.
 
 ## Usage
 You may query Shipworks data as any other ActiveRecord class:

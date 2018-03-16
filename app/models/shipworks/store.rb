@@ -1,5 +1,5 @@
 module Shipworks
-  class Store < ApplicationRecord
+  class Store < ShipworksRecord
     has_many :orders, foreign_key: 'StoreID'
   end
 end

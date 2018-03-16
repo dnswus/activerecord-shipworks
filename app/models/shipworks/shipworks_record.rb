@@ -1,5 +1,5 @@
 module Shipworks
-  class ApplicationRecord < ActiveRecord::Base
+  class ShipworksRecord < ActiveRecord::Base
     self.abstract_class = true
     establish_connection SHIPWORKS_DB if defined? SHIPWORKS_DB
 

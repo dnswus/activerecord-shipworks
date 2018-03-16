@@ -1,5 +1,5 @@
 module Shipworks
-  class OrderItem < ApplicationRecord
+  class OrderItem < ShipworksRecord
     belongs_to :order, foreign_key: 'OrderID'
     has_many :order_item_attributes, foreign_key: 'OrderItemID'
   end

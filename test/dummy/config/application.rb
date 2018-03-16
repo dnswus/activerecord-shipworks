@@ -11,7 +11,6 @@ require "rails/test_unit/railtie"
 require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
-require "shipworks"
 
 module Dummy
   class Application < Rails::Application

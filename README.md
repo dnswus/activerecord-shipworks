@@ -18,7 +18,6 @@ If you are connecting Shipworks as a second database, add Shipworks database con
 ```ruby
 # config/initializers/shipworks_db.rb
 SHIPWORKS_DB = YAML.load(ERB.new(IO.read(File.join(Rails.root, "config", "shipworks_database.yml"))).result)[Rails.env.to_s]
-Shipworks::ApplicationRecord # NOTE: Keep it here to force it load models in Shipworks.
 ```
 
 ## Usage

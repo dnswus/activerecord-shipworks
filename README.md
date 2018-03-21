@@ -22,6 +22,44 @@ You may query Shipworks data as any other ActiveRecord class:
 Shipworks::Order.order(:OrderDate).last(10)
 ```
 
+## Available Models
+* Order
+* OrderItem
+* OrderItemAttribute
+* OrderCharge
+* Note
+* Shipment
+* Store
+* UpsPackage
+* User
+
+### ER Diagram
+```
+                           +---------+
+                           |         |
+                           |  Store  |
+                           |         |
+                           +----+----+
+                                |
+                                |
+                                |
+                               /|\
++---------------+         +-----+-----+       +-------------+      +----------------------+
+|               |\        |           |      /|             |     /|                      |
+|  OrderCharge  +---------+   Order   +-------+  OrderItem  +------+  OrderItemAttribute  |
+|               |/        |           |      \|             |     \|                      |
++---------------+         +-+-------+-+       +-------------+      +----------------------+
+                            |       |
+                            |       |
+                            |       |
+                           /|\     /|\
+    +--------+       +------+-+   +-+----------+         +--------------+
+    |        |      /|        |   |            |        /|              |
+    |  User  +-------+  Note  |   |  Shipment  +---------+  UpsPackage  |
+    |        |      \|        |   |            |        \|              |
+    +--------+       +--------+   +------------+         +--------------+
+
+```
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at https://github.com/dnswus/activerecord-shipworks.

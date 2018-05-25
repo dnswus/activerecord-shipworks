@@ -5,5 +5,6 @@ module Shipworks
     has_many :shipments, foreign_key: 'OrderID'
     has_many :order_items, foreign_key: 'OrderID'
     has_many :order_charges, foreign_key: 'OrderID'
+    has_one :amazon_order, foreign_key: 'OrderID'
   end
 end

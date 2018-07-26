@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activerecord-shipworks (0.1.6)
+    activerecord-shipworks (0.1.9)
       activerecord-sqlserver-adapter
 
 GEM
@@ -23,11 +23,11 @@ GEM
       tzinfo (~> 1.1)
     arel (8.0.0)
     concurrent-ruby (1.0.5)
-    i18n (1.0.0)
+    i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     minitest (5.11.3)
     thread_safe (0.3.6)
-    tiny_tds (2.1.1)
+    tiny_tds (2.1.2)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
 
@@ -38,4 +38,4 @@ DEPENDENCIES
   activerecord-shipworks!
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
